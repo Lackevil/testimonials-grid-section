@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [link]()
-- Live Site URL: [link]()
+- Solution URL: [link](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7)
+- Live Site URL: [link](https://lackevil.github.io/testimonials-grid-section/)
 
 ## My process
 
