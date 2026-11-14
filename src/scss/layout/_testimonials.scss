@@ -1,0 +1,53 @@
+// ----- Testimonials -----
+
+@use '../abstracts' as *;
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'daniel'
+    'jonathan'
+    'jeanette'
+    'patrick'
+    'kira';
+  place-items: center;
+  gap: clamp(15px, 5vw, 25px) 30px;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'daniel daniel jonathan'
+      'jeanette patrick patrick'
+      'kira kira kira';
+  }
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'daniel daniel jonathan kira'
+      'jeanette patrick patrick kira';
+  }
+
+  & > .card.daniel {
+    grid-area: daniel;
+  }
+
+  & > .card.jonathan {
+    grid-area: jonathan;
+  }
+
+  & > .card.jeanette {
+    grid-area: jeanette;
+  }
+
+  & > .card.patrick {
+    grid-area: patrick;
+  }
+
+  & > .card.kira {
+    grid-area: kira;
+  }
+}
+
+// ----- Testimonials -----

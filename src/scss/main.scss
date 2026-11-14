@@ -1,0 +1,37 @@
+// ----- Main -----
+
+// Use
+
+@use 'abstracts' as *;
+@use 'base';
+@use 'layout';
+@use 'components';
+
+// Global
+
+body {
+  background-color: #f5f5f5;
+  font-weight: 500;
+  font-size: $font-size;
+  font-family: $font-main;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1260px;
+}
+
+.main {
+  flex: 1 1 auto;
+  padding: 15px 0;
+}
+
+// ----- Main -----

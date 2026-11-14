@@ -1,0 +1,98 @@
+// ----- Card -----
+
+@use '../abstracts' as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(5px, 5vw, 20px);
+  box-shadow: 40px 40px 40px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  padding: 3.6rem 3.2rem;
+  height: 100%;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__image {
+    border-radius: 50%;
+    max-width: 32px;
+    overflow: hidden;
+
+    & > img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__name {
+    font-size: 1.4rem;
+  }
+
+  &__status {
+    opacity: 0.8;
+    font-size: 1.2rem;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1.25;
+  }
+
+  &__review {
+    opacity: 0.8;
+    font-size: 1.5rem;
+    line-height: 1.35;
+  }
+
+  &.daniel {
+    background: $purple-500;
+    color: $purple-50;
+
+    @media (min-width: $bp-md) {
+      background: url(../../assets/images/bg-pattern-quotation.svg) 90% 0
+        no-repeat $purple-500;
+    }
+
+    .card__image {
+      border: 2px solid $purple-300;
+    }
+  }
+
+  &.jonathan {
+    background-color: $grey-500;
+    color: $white;
+  }
+
+  &.jeanette,
+  &.kira {
+    background-color: $white;
+    color: $grey-400;
+
+    & .card__title {
+      font-size: 2.3rem;
+    }
+  }
+
+  &.patrick {
+    background-color: $dark-blue;
+    color: $grey-200;
+
+    .card__image {
+      border: 2px solid $purple-500;
+    }
+  }
+}
+
+// ----- Card -----

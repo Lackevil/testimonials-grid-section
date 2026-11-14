@@ -1,0 +1,21 @@
+// ----- Fonts -----
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url('../../assets/fonts/BarlowSemiCondensed-Medium.woff2') format('woff2'),
+    url('../../assets/fonts/BarlowSemiCondensed-Medium.woff') format('woff');
+  font-family: 'Barlow';
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  src:
+    url('../../assets/fonts/BarlowSemiCondensed-SemiBold.woff2') format('woff2'),
+    url('../../assets/fonts/BarlowSemiCondensed-SemiBold.woff') format('woff');
+  font-family: 'Barlow';
+}
+
+// ----- Fonts -----
